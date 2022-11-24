@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import {Route,Routes} from "react-router-dom"
 import "./App.css"
+import Home from './components/pages/Home';
 
 const App = () => {
   return (
@@ -9,7 +10,7 @@ const App = () => {
     <Navbar/>
     <Routes>
 
-    <Route path="/" element={""} />
+    <Route path="/" element={<Home/>} />
       
       </Routes>
     </>
